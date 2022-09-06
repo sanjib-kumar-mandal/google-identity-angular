@@ -1,4 +1,4 @@
-# GoogleIdentityAuthentication
+# Google Identity Authentication
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
@@ -16,7 +16,10 @@ npm i google-identity-angular
 # Code sniffet
 
 ```
-import { AuthConfiguration, AuthConfigurationProvider, GoogleIdentityModule } from 'google-identity-angular';
+import { 
+  AuthConfiguration, 
+  AuthConfigurationProvider, 
+  GoogleIdentityModule } from 'google-identity-angular';
 ...
 
 export class ConfigFromApp implements AuthConfigurationProvider {
@@ -42,7 +45,12 @@ export class ConfigFromApp implements AuthConfigurationProvider {
   ],
   imports: [
     ...
-    GoogleIdentityModule.init({ config: { provide: AuthConfigurationProvider, useClass: ConfigFromApp } })
+    GoogleIdentityModule.init({ 
+      config: { 
+        provide: AuthConfigurationProvider, 
+        useClass: ConfigFromApp 
+      } 
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
