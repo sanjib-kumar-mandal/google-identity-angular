@@ -16,11 +16,7 @@ npm i google-identity-angular
 # Code sniffet
 
 ```
-import { GoogleIdentityModule } from 'projects/google-identity-authentication/src/lib/authentication.module';
-import {
-  AuthConfiguration, 
-  AuthConfigurationProvider,
-} from 'projects/google-identity-authentication/src/lib/auth-config';
+import { AuthConfiguration, AuthConfigurationProvider, GoogleIdentityModule } from 'google-identity-angular';
 ...
 
 export class ConfigFromApp implements AuthConfigurationProvider {
