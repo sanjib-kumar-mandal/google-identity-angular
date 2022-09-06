@@ -7,16 +7,26 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 This library is depend on [Google Identity](https://developers.google.com/identity/gsi/web).
 
 
+# Install
+
+```
+npm i google-identity-angular
+```
+
 # Code sniffet
 
 ```
 import { GoogleIdentityModule } from 'projects/google-identity-authentication/src/lib/authentication.module';
+import {
+  AuthConfiguration, 
+  AuthConfigurationProvider,
+} from 'projects/google-identity-authentication/src/lib/auth-config';
 ...
 
 export class ConfigFromApp implements AuthConfigurationProvider {
   get config(): AuthConfiguration {
     return { 
-      google_client_id: '446495613770-ag72d7u6rjgs8qhjkjq92ca4mu2ict1e.apps.googleusercontent.com',
+      google_client_id: 'GOOGLE_CLIENT_ID',
       google_button_theme: {
         width: 140,
         text: 'signin',
@@ -44,4 +54,10 @@ export class ConfigFromApp implements AuthConfigurationProvider {
 
 export class AppModule { }
 
+```
+
+# Use google button
+
+```
+<google (onResponse)="responsePrinter($event)"></google>
 ```
