@@ -1,6 +1,6 @@
 {
   "name": "google-identity-angular",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "peerDependencies": {
     "@angular/common": "^14.1.0",
     "@angular/core": "^14.1.0"
@@ -8,6 +8,18 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjib-kumar-mandal/google-identity-angular"
+  },
+  "keywords": [
+    "Google Identity",
+    "Google Authentication",
+    "Google Button",
+    "Auth Response"
+  ],
+  "author": "Sanjib Kumar Mandal <sanjib0248@gmail.com> (https://koniat.com/)",
+  "license": "MIT",
   "module": "fesm2015/google-identity-angular.mjs",
   "es2020": "fesm2020/google-identity-angular.mjs",
   "esm2020": "esm2020/google-identity-angular.mjs",
@@ -27,17 +39,5 @@
       "default": "./fesm2020/google-identity-angular.mjs"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanjib-kumar-mandal/google-identity-angular"
-  },
-  "keywords": [
-    "Google Identity",
-    "Google Authentication",
-    "Google Button",
-    "Auth Response"
-  ],
-  "author": "Sanjib Kumar Mandal <sanjib0248@gmail.com> (https://koniat.com/)",
-  "sideEffects": false,
-  "license": "ISC"
+  "sideEffects": false
 }
